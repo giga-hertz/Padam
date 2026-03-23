@@ -21,7 +21,7 @@ class LocalStreamRepository @Inject constructor() {
             connection.setRequestProperty("Depth", "1")
             connection.setRequestProperty("Content-Type", "application/xml")
 
-            if (connection.responseCode == HttpURLConnection.HTTP_MULTI_STATUS || connection.responseCode == HttpURLConnection.HTTP_OK) {
+            if (connection.responseCode == 207 || connection.responseCode == HttpURLConnection.HTTP_OK) {
                 parseWebDAVResponse(connection.inputStream.bufferedReader().readText(), baseUrl, path)
             } else {
                 emptyList()
