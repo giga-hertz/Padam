@@ -3,6 +3,7 @@ package com.nuvio.tv.core.di
 import com.nuvio.tv.data.repository.AddonRepositoryImpl
 import com.nuvio.tv.data.repository.CatalogRepositoryImpl
 import com.nuvio.tv.data.repository.LibraryRepositoryImpl
+import com.nuvio.tv.data.repository.LocalStreamRepository
 import com.nuvio.tv.data.repository.MetaRepositoryImpl
 import com.nuvio.tv.data.repository.StreamRepositoryImpl
 import com.nuvio.tv.data.repository.SubtitleRepositoryImpl
