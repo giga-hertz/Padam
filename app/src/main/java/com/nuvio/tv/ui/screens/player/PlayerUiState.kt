@@ -95,6 +95,13 @@ data class PlayerUiState(
     val sourceFilteredStreams: List<Stream> = emptyList(),
     val sourceAvailableAddons: List<String> = emptyList(),
     val sourceChips: List<SourceChipItem> = emptyList(),
+    // Local streaming state
+    val isLoadingLocalStreams: Boolean = false,
+    val localStreamsError: String? = null,
+    val localAllStreams: List<LocalStreamFile> = emptyList(),
+    val localSelectedFiles: Set<String> = emptySet(),
+    val localFilteredStreams: List<LocalStreamFile> = emptyList(),
+    val showLocalStreamsPanel: Boolean = false,
     val error: String? = null,
     val pendingSeekPosition: Long? = null,  // For resuming from saved progress
     // Parental guide overlay
