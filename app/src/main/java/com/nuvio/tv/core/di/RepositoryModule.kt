@@ -57,4 +57,8 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindWatchProgressRepository(impl: WatchProgressRepositoryImpl): WatchProgressRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindLocalStreamRepository(impl: LocalStreamRepository): LocalStreamRepository
 }
